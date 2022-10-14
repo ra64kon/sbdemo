@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class DemoController {
 
-    private String message = "my dynamic message";
+    char c = '\u2654';
+    private String message = "message: " + c;
     private int count=0;
 
     @RequestMapping("/test")
